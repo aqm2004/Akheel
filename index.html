@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>مقياس العواطف </title>
+    <style>
+      
+  /* يمكنك إضافة أنماط CSS هنا لتجميل الصفحة */
+    </style>
+</head>
+<body>
+    <h1>مقياس العواطف </h1>
+    <input type="text" id="name1" placeholder="الاسم الأول">
+    <input type="text" id="name2" placeholder="الاسم الثاني">
+    <button onclick="calculateEmotions()">احسب النسبة</button>
+    <p id="loveResult"></p>
+    <p id="hateResult"></p>
+    <p id="understandingResult"></p>
+
+    <script>
+        function calculateEmotions() {
+            const name1 = document.getElementById('name1').value;
+            const name2 = document.getElementById('name2').value;
+
+            // بدلاً من هذه الحسابات العشوائية، يمكنك استخدام خوارزمية أكثر تعقيدًا
+            const lovePercentage = Math.floor(Math.random() * 101);
+            const hatePercentage = Math.floor(Math.random() * 101);
+              const understandingPercentage = Math.floor(Math.random() * 101);
+            
+            
+            document.getElementById('loveResult').textContent = `نسبة الحب: ${lovePercentage}%`;
+            document.getElementById('hateResult').textContent = `نسبة الكره: ${hatePercentage}%`;
+            document.getElementById('understandingResult').textContent = `نسبة التفاهم: ${understandingPercentage}%`;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+          
+
+
+
+
